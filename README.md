@@ -4,7 +4,7 @@ Here you can find all data and Jupyter Notebooks.
 
 ## Using the Jupyter Notebooks
 #### With Binder
-You can use Binder to run the Jupyter Notebooks online, by clicking on this badge: 
+You can use Binder to run the Jupyter Notebooks online, by clicking on this badge:  
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/EnzymeML/Lauterbach_2021.git/HEAD)  
 This will start a JupyterLab session in your browser.  
 On the left you find the folder structure. Double-click on the folder you want to open, e.g. Scenario6. The Jupyter Notebooks have a small orange image icon. Double-click on the notebook you want to run.  
