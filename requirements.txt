@@ -3,3 +3,4 @@ matplotlib
 pandas
 lmfit
 copasi-basico
+pysces
