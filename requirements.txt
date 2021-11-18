@@ -1,0 +1,5 @@
+git+https://github.com/EnzymeML/PyEnzyme.git@Development
+matplotlib
+pandas
+lmfit
+copasi-basico
