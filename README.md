@@ -1,4 +1,4 @@
-# This repository accompanies the paper Lauterbach 2021
+# This repository accompanies the paper Lauterbach 2022
 The folder structure follows the structure of the paper.  
 Here you can find all data and Jupyter Notebooks.
 
