@@ -1,0 +1,34 @@
+Dataset: Pinto_Measurements (modelled by interferENZY)
+Substrate decay timecourse was detected. Conversion to Product production timecourse was obtained by the approximation P = S0-S.
+Individual Fitting Analysis will not be performed.
+Timepoint number < 5.
+
+-Global Fitting, Full Dataset 
+
+Instant 	 Km 	 SE 	 V 	 SE 
+1	6.900716191099997	1.260471963979179	1.814486087587302	0.1074327110530805
+
+Instant 	 R2 	 F 	 p value 	 Estimated Error Variance 
+1	0.7498275675458825	29.97242982331412	0.0002712541390081924	0.06001671463544543
+
+Coefficient of determination (R2) 
+Instant 	1
+ 	0.7498275675458825
+
+Individual curve analysis was not performed. 
+
+Kendall Correlation Coefficient score was set as zero. 
+
+Final Score (0-20) 
+Instant 	1
+ 	11.24741351318824
+
+Best guess for apparent kinetic parameters from final score analysis: 
+Instant 	 Km 	 SE 	 V 	 SE 
+1	6.900716191099997	1.260471963979179	1.814486087587302	0.1074327110530805
+
+Best guess for apparent parameter Km is within the range covered by experimental S0 values.
+
+
+Lower S0 range is higher than 0.1*Km (min(S0) > 0.1*Km).
+A broader range of S0 values is recommended for accurate kinetic analysis.
