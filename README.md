@@ -5,7 +5,7 @@ Here you can find all data and Jupyter Notebooks.
 ## Using the Jupyter Notebooks
 #### With Binder
 You can use Binder to run the Jupyter Notebooks online, by clicking on this badge:  
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/EnzymeML/Lauterbach_2021.git/HEAD)  
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/EnzymeML/Lauterbach_2022.git/HEAD)  
 (NOTE: you will be directed to Binder, this will not open a new tab! You can use right-click -> `Open in new Tab`)  
   
 This will start a JupyterLab session in your browser.  
