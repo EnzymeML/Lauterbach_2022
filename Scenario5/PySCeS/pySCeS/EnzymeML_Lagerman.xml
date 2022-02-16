@@ -133,7 +133,7 @@
           </enzymeml:parameter>
         </annotation>
       </parameter>
-      <parameter id="v_r" value="10000" constant="false">
+      <parameter id="v_r" value="10000" constant="true">
         <annotation>
           <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
             <enzymeml:initialValue>10000.0</enzymeml:initialValue>
