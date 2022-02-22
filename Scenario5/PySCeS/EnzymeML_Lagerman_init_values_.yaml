@@ -29,8 +29,8 @@ r5:
 r6:
   k_3:
     initial_value: 417
-    upper: 0.01
-    lower: 1000000
+    upper: 1000000
+    lower: 0.01
 r7:
   K_pg:
     initial_value: 12
@@ -60,4 +60,3 @@ r12:
     initial_value: 0.000643
     upper: 0.5
     lower: 0.3
-
