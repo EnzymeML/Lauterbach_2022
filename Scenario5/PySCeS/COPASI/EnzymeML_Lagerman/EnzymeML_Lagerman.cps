@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.34.251+ (Source) (http://www.copasi.org) at 2022-03-01T16:04:41Z -->
+<!-- generated with COPASI 4.34.251+ (Source) (http://www.copasi.org) at 2022-03-03T12:07:57Z -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="34" versionDevel="251" copasiSourcesModified="1">
   <ListOfFunctions>
@@ -269,7 +269,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Model_1">
     <dcterms:created>
       <rdf:Description>
-        <dcterms:W3CDTF>2022-03-01T16:04:41Z</dcterms:W3CDTF>
+        <dcterms:W3CDTF>2022-03-03T12:07:57Z</dcterms:W3CDTF>
       </rdf:Description>
     </dcterms:created>
   </rdf:Description>
@@ -533,14 +533,14 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <ListOfUnsupportedAnnotations>
           <UnsupportedAnnotation name="http://sbml.org/enzymeml/version2">
 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-  <enzymeml:initialValue>20.0</enzymeml:initialValue>
+  <enzymeml:initialValue>16.12556695</enzymeml:initialValue>
   <enzymeml:upperBound>50.0</enzymeml:upperBound>
   <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
 </enzymeml:parameter>
           </UnsupportedAnnotation>
         </ListOfUnsupportedAnnotations>
         <Unit>
-          0.1*mmol/l
+          10*l/mmol
         </Unit>
       </ModelValue>
       <ModelValue key="ModelValue_1" name="K_n" simulationType="fixed" addNoise="false">
@@ -555,34 +555,14 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <ListOfUnsupportedAnnotations>
           <UnsupportedAnnotation name="http://sbml.org/enzymeml/version2">
 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-  <enzymeml:initialValue>290.0</enzymeml:initialValue>
+  <enzymeml:initialValue>14.16013538</enzymeml:initialValue>
   <enzymeml:upperBound>1000.0</enzymeml:upperBound>
   <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
 </enzymeml:parameter>
           </UnsupportedAnnotation>
         </ListOfUnsupportedAnnotations>
         <Unit>
-          0.1*mmol/l
-        </Unit>
-      </ModelValue>
-      <ModelValue key="ModelValue_2" name="v_r" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_2">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-        <ListOfUnsupportedAnnotations>
-          <UnsupportedAnnotation name="http://sbml.org/enzymeml/version2">
-<enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-  <enzymeml:initialValue>10000.0</enzymeml:initialValue>
-</enzymeml:parameter>
-          </UnsupportedAnnotation>
-        </ListOfUnsupportedAnnotations>
-        <Unit>
-          0.1*ml²/(mmol*s)
+          10*l/mmol
         </Unit>
       </ModelValue>
     </ListOfModelValues>
@@ -606,8 +586,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Product metabolite="Metabolite_4" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_202" name="K_n" value="1"/>
-          <Constant key="Parameter_203" name="v_r" value="1"/>
+          <Constant key="Parameter_202" name="v_r" value="10000"/>
+          <Constant key="Parameter_203" name="K_n" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_39" unitType="Default" scalingCompartment="CN=Root,Model=EnzymeML_Lagerman,Vector=Compartments[Falcon Tube]">
           <ListOfCallParameters>
@@ -627,7 +607,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
               <SourceParameter reference="Compartment_0"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_271">
-              <SourceParameter reference="ModelValue_2"/>
+              <SourceParameter reference="Parameter_202"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
@@ -651,13 +631,13 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Product metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_204" name="K_s" value="14"/>
-          <Constant key="Parameter_205" name="v_r" value="1"/>
+          <Constant key="Parameter_204" name="v_r" value="10000"/>
+          <Constant key="Parameter_205" name="K_s" value="0.951767"/>
         </ListOfConstants>
         <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=EnzymeML_Lagerman,Vector=Compartments[Falcon Tube]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_278">
-              <SourceParameter reference="Parameter_204"/>
+              <SourceParameter reference="Parameter_205"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_279">
               <SourceParameter reference="Metabolite_3"/>
@@ -672,7 +652,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
               <SourceParameter reference="Compartment_0"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_283">
-              <SourceParameter reference="ModelValue_2"/>
+              <SourceParameter reference="Parameter_204"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
@@ -695,7 +675,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Product metabolite="Metabolite_1" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_206" name="k_2" value="432"/>
+          <Constant key="Parameter_206" name="k_2" value="32894.5"/>
         </ListOfConstants>
         <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=EnzymeML_Lagerman,Vector=Compartments[Falcon Tube]">
           <ListOfCallParameters>
@@ -730,8 +710,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Product metabolite="Metabolite_6" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_207" name="K_si" value="1"/>
-          <Constant key="Parameter_208" name="v_r" value="1"/>
+          <Constant key="Parameter_207" name="v_r" value="10000"/>
+          <Constant key="Parameter_208" name="K_si" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_42" unitType="Default" scalingCompartment="CN=Root,Model=EnzymeML_Lagerman,Vector=Compartments[Falcon Tube]">
           <ListOfCallParameters>
@@ -751,7 +731,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
               <SourceParameter reference="Compartment_0"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_301">
-              <SourceParameter reference="ModelValue_2"/>
+              <SourceParameter reference="Parameter_207"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
@@ -775,8 +755,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Product metabolite="Metabolite_8" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_209" name="K_si" value="1"/>
-          <Constant key="Parameter_210" name="v_r" value="1"/>
+          <Constant key="Parameter_209" name="v_r" value="10000"/>
+          <Constant key="Parameter_210" name="K_si" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_43" unitType="Default" scalingCompartment="CN=Root,Model=EnzymeML_Lagerman,Vector=Compartments[Falcon Tube]">
           <ListOfCallParameters>
@@ -796,7 +776,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
               <SourceParameter reference="Compartment_0"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_313">
-              <SourceParameter reference="ModelValue_2"/>
+              <SourceParameter reference="Parameter_209"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
@@ -820,7 +800,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Product metabolite="Metabolite_13" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_211" name="k_6" value="1660"/>
+          <Constant key="Parameter_211" name="k_6" value="1364.83"/>
         </ListOfConstants>
         <KineticLaw function="Function_44" unitType="Default" scalingCompartment="CN=Root,Model=EnzymeML_Lagerman,Vector=Compartments[Falcon Tube]">
           <ListOfCallParameters>
@@ -855,7 +835,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Product metabolite="Metabolite_13" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_212" name="k_3" value="417"/>
+          <Constant key="Parameter_212" name="k_3" value="999911"/>
         </ListOfConstants>
         <KineticLaw function="Function_45" unitType="Default" scalingCompartment="CN=Root,Model=EnzymeML_Lagerman,Vector=Compartments[Falcon Tube]">
           <ListOfCallParameters>
@@ -890,13 +870,13 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Product metabolite="Metabolite_5" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_213" name="K_pg" value="12"/>
-          <Constant key="Parameter_214" name="v_r" value="1"/>
+          <Constant key="Parameter_213" name="v_r" value="10000"/>
+          <Constant key="Parameter_214" name="K_pg" value="163.499"/>
         </ListOfConstants>
         <KineticLaw function="Function_46" unitType="Default" scalingCompartment="CN=Root,Model=EnzymeML_Lagerman,Vector=Compartments[Falcon Tube]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_332">
-              <SourceParameter reference="Parameter_213"/>
+              <SourceParameter reference="Parameter_214"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_333">
               <SourceParameter reference="Metabolite_5"/>
@@ -911,7 +891,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
               <SourceParameter reference="Compartment_0"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_337">
-              <SourceParameter reference="ModelValue_2"/>
+              <SourceParameter reference="Parameter_213"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
@@ -935,8 +915,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Product metabolite="Metabolite_7" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_215" name="K_n" value="1"/>
-          <Constant key="Parameter_216" name="v_r" value="1"/>
+          <Constant key="Parameter_215" name="v_r" value="10000"/>
+          <Constant key="Parameter_216" name="K_n" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_47" unitType="Default" scalingCompartment="CN=Root,Model=EnzymeML_Lagerman,Vector=Compartments[Falcon Tube]">
           <ListOfCallParameters>
@@ -956,7 +936,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
               <SourceParameter reference="Compartment_0"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_349">
-              <SourceParameter reference="ModelValue_2"/>
+              <SourceParameter reference="Parameter_215"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
@@ -981,7 +961,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Product metabolite="Metabolite_11" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_217" name="k_5" value="491"/>
+          <Constant key="Parameter_217" name="k_5" value="438.251"/>
         </ListOfConstants>
         <KineticLaw function="Function_48" unitType="Default" scalingCompartment="CN=Root,Model=EnzymeML_Lagerman,Vector=Compartments[Falcon Tube]">
           <ListOfCallParameters>
@@ -1015,8 +995,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Product metabolite="Metabolite_9" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_218" name="k_4" value="73600"/>
-          <Constant key="Parameter_219" name="k_4b" value="9126"/>
+          <Constant key="Parameter_218" name="k_4" value="13120.9"/>
+          <Constant key="Parameter_219" name="k_4b" value="572988"/>
         </ListOfConstants>
         <KineticLaw function="Function_49" unitType="Default" scalingCompartment="CN=Root,Model=EnzymeML_Lagerman,Vector=Compartments[Falcon Tube]">
           <ListOfCallParameters>
@@ -1057,13 +1037,13 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Product metabolite="Metabolite_12" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_220" name="K_p" value="39"/>
-          <Constant key="Parameter_221" name="v_r" value="1"/>
+          <Constant key="Parameter_220" name="v_r" value="10000"/>
+          <Constant key="Parameter_221" name="K_p" value="102.314"/>
         </ListOfConstants>
         <KineticLaw function="Function_50" unitType="Default" scalingCompartment="CN=Root,Model=EnzymeML_Lagerman,Vector=Compartments[Falcon Tube]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_372">
-              <SourceParameter reference="Parameter_220"/>
+              <SourceParameter reference="Parameter_221"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_373">
               <SourceParameter reference="Metabolite_9"/>
@@ -1078,7 +1058,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
               <SourceParameter reference="Compartment_0"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_377">
-              <SourceParameter reference="ModelValue_2"/>
+              <SourceParameter reference="Parameter_220"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
@@ -1101,7 +1081,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Product metabolite="Metabolite_2" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_222" name="k_d" value="0.000643"/>
+          <Constant key="Parameter_222" name="k_d" value="0.30119"/>
         </ListOfConstants>
         <KineticLaw function="Function_51" unitType="Default" scalingCompartment="CN=Root,Model=EnzymeML_Lagerman,Vector=Compartments[Falcon Tube]">
           <ListOfCallParameters>
@@ -1151,101 +1131,72 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Compartments[Falcon Tube],Vector=Metabolites[PG]" value="0" type="Species" simulationType="reactions"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Global Quantities" type="Group">
-          <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Values[K_si]" value="20" type="ModelValue" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Values[K_n]" value="290" type="ModelValue" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Values[v_r]" value="10000" type="ModelValue" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Values[K_si]" value="16.12556695" type="ModelValue" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Values[K_n]" value="14.16013538" type="ModelValue" simulationType="fixed"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Kinetic Parameters" type="Group">
           <ModelParameterGroup cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-1]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-1],ParameterGroup=Parameters,Parameter=K_n" value="290" type="ReactionParameter" simulationType="assignment">
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-1],ParameterGroup=Parameters,Parameter=v_r" value="10000" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-1],ParameterGroup=Parameters,Parameter=K_n" value="14.16013538" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
                 &lt;CN=Root,Model=EnzymeML_Lagerman,Vector=Values[K_n],Reference=InitialValue>
-              </InitialExpression>
-            </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-1],ParameterGroup=Parameters,Parameter=v_r" value="10000" type="ReactionParameter" simulationType="assignment">
-              <InitialExpression>
-                &lt;CN=Root,Model=EnzymeML_Lagerman,Vector=Values[v_r],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-2]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-2],ParameterGroup=Parameters,Parameter=K_s" value="14" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-2],ParameterGroup=Parameters,Parameter=v_r" value="10000" type="ReactionParameter" simulationType="assignment">
-              <InitialExpression>
-                &lt;CN=Root,Model=EnzymeML_Lagerman,Vector=Values[v_r],Reference=InitialValue>
-              </InitialExpression>
-            </ModelParameter>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-2],ParameterGroup=Parameters,Parameter=v_r" value="10000" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-2],ParameterGroup=Parameters,Parameter=K_s" value="0.9517666749" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-3]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-3],ParameterGroup=Parameters,Parameter=k_2" value="432" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-3],ParameterGroup=Parameters,Parameter=k_2" value="32894.517999999996" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-4]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-4],ParameterGroup=Parameters,Parameter=K_si" value="20" type="ReactionParameter" simulationType="assignment">
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-4],ParameterGroup=Parameters,Parameter=v_r" value="10000" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-4],ParameterGroup=Parameters,Parameter=K_si" value="16.12556695" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
                 &lt;CN=Root,Model=EnzymeML_Lagerman,Vector=Values[K_si],Reference=InitialValue>
-              </InitialExpression>
-            </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-4],ParameterGroup=Parameters,Parameter=v_r" value="10000" type="ReactionParameter" simulationType="assignment">
-              <InitialExpression>
-                &lt;CN=Root,Model=EnzymeML_Lagerman,Vector=Values[v_r],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-5]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-5],ParameterGroup=Parameters,Parameter=K_si" value="20" type="ReactionParameter" simulationType="assignment">
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-5],ParameterGroup=Parameters,Parameter=v_r" value="10000" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-5],ParameterGroup=Parameters,Parameter=K_si" value="16.12556695" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
                 &lt;CN=Root,Model=EnzymeML_Lagerman,Vector=Values[K_si],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-5],ParameterGroup=Parameters,Parameter=v_r" value="10000" type="ReactionParameter" simulationType="assignment">
-              <InitialExpression>
-                &lt;CN=Root,Model=EnzymeML_Lagerman,Vector=Values[v_r],Reference=InitialValue>
-              </InitialExpression>
-            </ModelParameter>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-6]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-6],ParameterGroup=Parameters,Parameter=k_6" value="1660" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-6],ParameterGroup=Parameters,Parameter=k_6" value="1364.8279769999999" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-7]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-7],ParameterGroup=Parameters,Parameter=k_3" value="417" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-7],ParameterGroup=Parameters,Parameter=k_3" value="999911.32709999999" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-8]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-8],ParameterGroup=Parameters,Parameter=K_pg" value="12" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-8],ParameterGroup=Parameters,Parameter=v_r" value="10000" type="ReactionParameter" simulationType="assignment">
-              <InitialExpression>
-                &lt;CN=Root,Model=EnzymeML_Lagerman,Vector=Values[v_r],Reference=InitialValue>
-              </InitialExpression>
-            </ModelParameter>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-8],ParameterGroup=Parameters,Parameter=v_r" value="10000" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-8],ParameterGroup=Parameters,Parameter=K_pg" value="163.49856560000001" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-9]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-9],ParameterGroup=Parameters,Parameter=K_n" value="290" type="ReactionParameter" simulationType="assignment">
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-9],ParameterGroup=Parameters,Parameter=v_r" value="10000" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-9],ParameterGroup=Parameters,Parameter=K_n" value="14.16013538" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
                 &lt;CN=Root,Model=EnzymeML_Lagerman,Vector=Values[K_n],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-9],ParameterGroup=Parameters,Parameter=v_r" value="10000" type="ReactionParameter" simulationType="assignment">
-              <InitialExpression>
-                &lt;CN=Root,Model=EnzymeML_Lagerman,Vector=Values[v_r],Reference=InitialValue>
-              </InitialExpression>
-            </ModelParameter>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-10]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-10],ParameterGroup=Parameters,Parameter=k_5" value="491" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-10],ParameterGroup=Parameters,Parameter=k_5" value="438.25088049999999" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-11]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-11],ParameterGroup=Parameters,Parameter=k_4" value="73600" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-11],ParameterGroup=Parameters,Parameter=k_4b" value="9126" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-11],ParameterGroup=Parameters,Parameter=k_4" value="13120.924950000001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-11],ParameterGroup=Parameters,Parameter=k_4b" value="572987.50060000003" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-12]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-12],ParameterGroup=Parameters,Parameter=K_p" value="39" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-12],ParameterGroup=Parameters,Parameter=v_r" value="10000" type="ReactionParameter" simulationType="assignment">
-              <InitialExpression>
-                &lt;CN=Root,Model=EnzymeML_Lagerman,Vector=Values[v_r],Reference=InitialValue>
-              </InitialExpression>
-            </ModelParameter>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-12],ParameterGroup=Parameters,Parameter=v_r" value="10000" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-12],ParameterGroup=Parameters,Parameter=K_p" value="102.3138715" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[Enzyme deactivation]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[Enzyme deactivation],ParameterGroup=Parameters,Parameter=k_d" value="0.00064300000000000002" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[Enzyme deactivation],ParameterGroup=Parameters,Parameter=k_d" value="0.30119021759999998" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
         </ModelParameterGroup>
       </ModelParameterSet>
@@ -1269,10 +1220,9 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <StateTemplateVariable objectReference="Compartment_0"/>
       <StateTemplateVariable objectReference="ModelValue_0"/>
       <StateTemplateVariable objectReference="ModelValue_1"/>
-      <StateTemplateVariable objectReference="ModelValue_2"/>
     </StateTemplate>
     <InitialState type="initialState">
-      0 6.0221417899999999e+23 6.0221417899999999e+23 0 0 6.0221417900000001e+25 0 0 1.2646497758999999e+26 0 6.0221417899999999e+23 0 0 0 0 5 20 290 10000 
+      0 6.0221417899999999e+23 6.0221417899999999e+23 0 0 6.0221417900000001e+25 0 0 1.2646497758999999e+26 0 6.0221417899999999e+23 0 0 0 0 5 16.12556695 14.16013538 
     </InitialState>
   </Model>
   <ListOfTasks>
@@ -1369,7 +1319,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=EnzymeML_Lagerman,Vector=Values[K_si],Reference=InitialValue"/>
             <Parameter name="LowerBound" type="cn" value="0.01"/>
             <Parameter name="UpperBound" type="cn" value="50.0"/>
-            <Parameter name="StartValue" type="float" value="20"/>
+            <Parameter name="StartValue" type="float" value="16.12556695"/>
             <ParameterGroup name="Affected Experiments">
             </ParameterGroup>
             <ParameterGroup name="Affected Cross Validation Experiments">
@@ -1379,7 +1329,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=EnzymeML_Lagerman,Vector=Values[K_n],Reference=InitialValue"/>
             <Parameter name="LowerBound" type="cn" value="0.01"/>
             <Parameter name="UpperBound" type="cn" value="1000.0"/>
-            <Parameter name="StartValue" type="float" value="290"/>
+            <Parameter name="StartValue" type="float" value="14.16013538"/>
             <ParameterGroup name="Affected Experiments">
             </ParameterGroup>
             <ParameterGroup name="Affected Cross Validation Experiments">
@@ -1389,7 +1339,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-2],ParameterGroup=Parameters,Parameter=K_s,Reference=Value"/>
             <Parameter name="LowerBound" type="cn" value="0.01"/>
             <Parameter name="UpperBound" type="cn" value="1000.0"/>
-            <Parameter name="StartValue" type="float" value="14"/>
+            <Parameter name="StartValue" type="float" value="0.9517666749"/>
             <ParameterGroup name="Affected Experiments">
             </ParameterGroup>
             <ParameterGroup name="Affected Cross Validation Experiments">
@@ -1399,7 +1349,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-3],ParameterGroup=Parameters,Parameter=k_2,Reference=Value"/>
             <Parameter name="LowerBound" type="cn" value="0.01"/>
             <Parameter name="UpperBound" type="cn" value="1000000.0"/>
-            <Parameter name="StartValue" type="float" value="432"/>
+            <Parameter name="StartValue" type="float" value="32894.517999999996"/>
             <ParameterGroup name="Affected Experiments">
             </ParameterGroup>
             <ParameterGroup name="Affected Cross Validation Experiments">
@@ -1409,7 +1359,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-6],ParameterGroup=Parameters,Parameter=k_6,Reference=Value"/>
             <Parameter name="LowerBound" type="cn" value="0.01"/>
             <Parameter name="UpperBound" type="cn" value="1000000.0"/>
-            <Parameter name="StartValue" type="float" value="1660"/>
+            <Parameter name="StartValue" type="float" value="1364.8279769999999"/>
             <ParameterGroup name="Affected Experiments">
             </ParameterGroup>
             <ParameterGroup name="Affected Cross Validation Experiments">
@@ -1419,7 +1369,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-7],ParameterGroup=Parameters,Parameter=k_3,Reference=Value"/>
             <Parameter name="LowerBound" type="cn" value="0.01"/>
             <Parameter name="UpperBound" type="cn" value="1000000.0"/>
-            <Parameter name="StartValue" type="float" value="417"/>
+            <Parameter name="StartValue" type="float" value="999911.32709999999"/>
             <ParameterGroup name="Affected Experiments">
             </ParameterGroup>
             <ParameterGroup name="Affected Cross Validation Experiments">
@@ -1429,7 +1379,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-8],ParameterGroup=Parameters,Parameter=K_pg,Reference=Value"/>
             <Parameter name="LowerBound" type="cn" value="0.01"/>
             <Parameter name="UpperBound" type="cn" value="1000.0"/>
-            <Parameter name="StartValue" type="float" value="12"/>
+            <Parameter name="StartValue" type="float" value="163.49856560000001"/>
             <ParameterGroup name="Affected Experiments">
             </ParameterGroup>
             <ParameterGroup name="Affected Cross Validation Experiments">
@@ -1439,7 +1389,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-10],ParameterGroup=Parameters,Parameter=k_5,Reference=Value"/>
             <Parameter name="LowerBound" type="cn" value="0.01"/>
             <Parameter name="UpperBound" type="cn" value="1000000.0"/>
-            <Parameter name="StartValue" type="float" value="491"/>
+            <Parameter name="StartValue" type="float" value="438.25088049999999"/>
             <ParameterGroup name="Affected Experiments">
             </ParameterGroup>
             <ParameterGroup name="Affected Cross Validation Experiments">
@@ -1449,7 +1399,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-11],ParameterGroup=Parameters,Parameter=k_4,Reference=Value"/>
             <Parameter name="LowerBound" type="cn" value="0.01"/>
             <Parameter name="UpperBound" type="cn" value="1000000.0"/>
-            <Parameter name="StartValue" type="float" value="73600"/>
+            <Parameter name="StartValue" type="float" value="13120.924950000001"/>
             <ParameterGroup name="Affected Experiments">
             </ParameterGroup>
             <ParameterGroup name="Affected Cross Validation Experiments">
@@ -1459,7 +1409,17 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-11],ParameterGroup=Parameters,Parameter=k_4b,Reference=Value"/>
             <Parameter name="LowerBound" type="cn" value="0.01"/>
             <Parameter name="UpperBound" type="cn" value="1000000.0"/>
-            <Parameter name="StartValue" type="float" value="9126"/>
+            <Parameter name="StartValue" type="float" value="572987.50060000003"/>
+            <ParameterGroup name="Affected Experiments">
+            </ParameterGroup>
+            <ParameterGroup name="Affected Cross Validation Experiments">
+            </ParameterGroup>
+          </ParameterGroup>
+          <ParameterGroup name="FitItem">
+            <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-12],ParameterGroup=Parameters,Parameter=v_r,Reference=Value"/>
+            <Parameter name="LowerBound" type="cn" value="0.01"/>
+            <Parameter name="UpperBound" type="cn" value="10000.0"/>
+            <Parameter name="StartValue" type="float" value="10000"/>
             <ParameterGroup name="Affected Experiments">
             </ParameterGroup>
             <ParameterGroup name="Affected Cross Validation Experiments">
@@ -1469,7 +1429,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[reaction-12],ParameterGroup=Parameters,Parameter=K_p,Reference=Value"/>
             <Parameter name="LowerBound" type="cn" value="0.01"/>
             <Parameter name="UpperBound" type="cn" value="10000.0"/>
-            <Parameter name="StartValue" type="float" value="39"/>
+            <Parameter name="StartValue" type="float" value="102.3138715"/>
             <ParameterGroup name="Affected Experiments">
             </ParameterGroup>
             <ParameterGroup name="Affected Cross Validation Experiments">
@@ -1479,7 +1439,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=EnzymeML_Lagerman,Vector=Reactions[Enzyme deactivation],ParameterGroup=Parameters,Parameter=k_d,Reference=Value"/>
             <Parameter name="LowerBound" type="cn" value="0.3"/>
             <Parameter name="UpperBound" type="cn" value="0.5"/>
-            <Parameter name="StartValue" type="float" value="0.00064300000000000002"/>
+            <Parameter name="StartValue" type="float" value="0.30119021759999998"/>
             <ParameterGroup name="Affected Experiments">
             </ParameterGroup>
             <ParameterGroup name="Affected Cross Validation Experiments">
