@@ -1,4 +1,9 @@
 global:
+  v_r:
+    initial_value: null
+    constant: true
+    upper: null
+    lower: null
   K_si:
     initial_value: null
     constant: false
@@ -9,18 +14,7 @@ global:
     constant: false
     upper: null
     lower: null
-r0:
-  v_r:
-    initial_value: null
-    constant: false
-    upper: null
-    lower: null
 r1:
-  v_r:
-    initial_value: null
-    constant: false
-    upper: null
-    lower: null
   K_s:
     initial_value: null
     constant: false
@@ -28,18 +22,6 @@ r1:
     lower: null
 r2:
   k_2:
-    initial_value: null
-    constant: false
-    upper: null
-    lower: null
-r3:
-  v_r:
-    initial_value: null
-    constant: false
-    upper: null
-    lower: null
-r4:
-  v_r:
     initial_value: null
     constant: false
     upper: null
@@ -57,18 +39,7 @@ r6:
     upper: null
     lower: null
 r7:
-  v_r:
-    initial_value: null
-    constant: false
-    upper: null
-    lower: null
   K_pg:
-    initial_value: null
-    constant: false
-    upper: null
-    lower: null
-r8:
-  v_r:
     initial_value: null
     constant: false
     upper: null
@@ -91,11 +62,6 @@ r10:
     upper: null
     lower: null
 r11:
-  v_r:
-    initial_value: null
-    constant: false
-    upper: null
-    lower: null
   K_p:
     initial_value: null
     constant: false

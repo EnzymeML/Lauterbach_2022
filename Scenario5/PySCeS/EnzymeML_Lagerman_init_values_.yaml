@@ -1,63 +1,76 @@
 global:
   K_si:
-    initial_value: 16.12556695
-    upper: 50
-    lower: 0.01
-  K_n:
-    initial_value: 14.16013538
+    initial_value: 20
+    constant: false
     upper: 1000
     lower: 0.01
+  K_n:
+    initial_value: 300
+    constant: false
+    upper: 10000
+    lower: 0.01
   v_r:
-    initial_value: 10000
+    initial_value: 1e9
+    constant: true
     upper: null
     lower: null
 r1:
   K_s:
-    initial_value: 0.9517666749
+    initial_value: 15.0
+    constant: false
     upper: 1000
     lower: 0.01
 r2:
   k_2:
-    initial_value: 32894.518
-    upper: 1000000
-    lower: 0.01
+    initial_value: 26000.0
+    constant: false
+    upper: 1e6
+    lower: 1.0
 r5:
   k_6:
-    initial_value: 1364.827977
-    upper: 1000000
-    lower: 0.01
+    initial_value: 1e5
+    constant: false
+    upper: 1e7
+    lower: 1.0
 r6:
   k_3:
-    initial_value: 999911.3271
-    upper: 1000000
-    lower: 0.01
+    initial_value: 25000
+    constant: false
+    upper: 1e6
+    lower: 1.0
 r7:
   K_pg:
-    initial_value: 163.4985656
+    initial_value: 12
+    constant: false
     upper: 1000
     lower: 0.01
 r9:
   k_5:
-    initial_value: 438.2508805
-    upper: 1000000
-    lower: 0.01
+    initial_value: 30000
+    constant: false
+    upper: 1e6
+    lower: 1.0
 r10:
   k_4:
-    initial_value: 13120.92495
-    upper: 1000000
-    lower: 0.01
+    initial_value: 4.4e6
+    constant: false
+    upper: 1e8
+    lower: 1.0
   k_4b:
-    initial_value: 572987.5006
-    upper: 1000000
-    lower: 0.01
+    initial_value: 5.5e5
+    constant: false
+    upper: 1e8
+    lower: 1.0
 r11:
   K_p:
-    initial_value: 102.3138715
-    upper: 10000
+    initial_value: 40
+    constant: false
+    upper: 1000
     lower: 0.01
 r12:
   k_d:
-    initial_value: 0.3011902176
-    upper: 0.5
-    lower: 0.3
+    initial_value: 0.04
+    constant: false
+    upper: 0.001
+    lower: 1.0
 
