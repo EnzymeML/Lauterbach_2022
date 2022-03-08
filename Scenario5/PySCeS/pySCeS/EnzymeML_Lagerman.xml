@@ -29,22 +29,16 @@
           <unit kind="second" exponent="1" scale="1" multiplier="60"/>
         </listOfUnits>
       </unitDefinition>
-      <unitDefinition metaid="METAID_U5" id="u5" name="l / mmole">
+      <unitDefinition metaid="METAID_U5" id="u5" name="l / min mmole">
         <listOfUnits>
           <unit kind="litre" exponent="1" scale="1" multiplier="1"/>
           <unit kind="mole" exponent="-1" scale="-3" multiplier="1"/>
+          <unit kind="second" exponent="-1" scale="1" multiplier="60"/>
         </listOfUnits>
       </unitDefinition>
-      <unitDefinition metaid="METAID_U6" id="u6" name="1 / s">
+      <unitDefinition metaid="METAID_U6" id="u6" name="1 / min">
         <listOfUnits>
-          <unit kind="second" exponent="-1" scale="1" multiplier="1"/>
-        </listOfUnits>
-      </unitDefinition>
-      <unitDefinition metaid="METAID_U7" id="u7" name="l / s mmole">
-        <listOfUnits>
-          <unit kind="litre" exponent="1" scale="1" multiplier="1"/>
-          <unit kind="mole" exponent="-1" scale="-3" multiplier="1"/>
-          <unit kind="second" exponent="-1" scale="1" multiplier="1"/>
+          <unit kind="second" exponent="-1" scale="1" multiplier="60"/>
         </listOfUnits>
       </unitDefinition>
     </listOfUnitDefinitions>
@@ -52,7 +46,7 @@
       <compartment id="v0" name="Falcon Tube" spatialDimensions="3" size="5" units="u0" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
-      <species metaid="METAID_P0" sboTerm="SBO:0000252" id="p0" name="E" compartment="v0" initialConcentration="0.2" substanceUnits="u2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species metaid="METAID_P0" sboTerm="SBO:0000252" id="p0" name="E" compartment="v0" initialConcentration="0.0002" substanceUnits="u2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>
           <enzymeml:protein xmlns:enzymeml="http://sbml.org/enzymeml/version2">
             <enzymeml:sequence>MRRLAACLLATAVAAATSAALAQTSPMTPDITGKPFVAGDAANDYVKREVMIPMRDGVKLHTVIVLPKGARNAPIVLTRTPYDASGRTERLASPHMKDLLSAGDDVFVEGGYIRVFQDVRGKYGSEGDYVMTRPLRGPLNPSEVDHATDAWDTIDWLVKNVKESNGKVGMIGSSYEGFTVVMALTNPHPALKVAAPESPMIDGWMGDDWFNYGAFRQVNFDYFTGQLSKRGKGAGIPRQGHDDYSNFLQAGSAGDFAKAAGLEQLPWWHKLTEHAAYDSFWQEQALDKVMARTPLKVPTMWLQGLWDQEDMWGAIHSYAAMEPRDKSNKLNYLVMGPWRHSQVNSDASSLGALNFDGDTARQFRRDVLRPFFDQYLVDGAPKAATPPVFIYNTGENHWDRLQAWPRSCDKGCAAKSKPLYLQAGGKLSFQAPTAAQPAFEEYVSDPAKPVPFVPRPVDFGDRSMWTTWLVHDQRFVDGRPDVLTFVTEPLTAPLQIAGAPDVHLQASTSGSDSDWVVKLIDVYPDEMAADPKMGGYELPVSMAIFRGRYRESFSTPAPLAANQPLAFQFGLPTANHTFQPGHRVMVQVQSSLFPLYDRNPQTYVPNVFFAKPGDYQKATQRVYVAPGQGSYISLPVR</enzymeml:sequence>
@@ -62,7 +56,7 @@
           </enzymeml:protein>
         </annotation>
       </species>
-      <species metaid="METAID_P1" sboTerm="SBO:0000252" id="p1" name="EA" compartment="v0" initialConcentration="0.2" substanceUnits="u2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species metaid="METAID_P1" sboTerm="SBO:0000252" id="p1" name="EA" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>
           <enzymeml:protein xmlns:enzymeml="http://sbml.org/enzymeml/version2">
             <enzymeml:sequence>MRRLAACLLATAVAAATSAALAQTSPMTPDITGKPFVAGDAANDYVKREVMIPMRDGVKLHTVIVLPKGARNAPIVLTRTPYDASGRTERLASPHMKDLLSAGDDVFVEGGYIRVFQDVRGKYGSEGDYVMTRPLRGPLNPSEVDHATDAWDTIDWLVKNVKESNGKVGMIGSSYEGFTVVMALTNPHPALKVAAPESPMIDGWMGDDWFNYGAFRQVNFDYFTGQLSKRGKGAGIPRQGHDDYSNFLQAGSAGDFAKAAGLEQLPWWHKLTEHAAYDSFWQEQALDKVMARTPLKVPTMWLQGLWDQEDMWGAIHSYAAMEPRDKSNKLNYLVMGPWRHSQVNSDASSLGALNFDGDTARQFRRDVLRPFFDQYLVDGAPKAATPPVFIYNTGENHWDRLQAWPRSCDKGCAAKSKPLYLQAGGKLSFQAPTAAQPAFEEYVSDPAKPVPFVPRPVDFGDRSMWTTWLVHDQRFVDGRPDVLTFVTEPLTAPLQIAGAPDVHLQASTSGSDSDWVVKLIDVYPDEMAADPKMGGYELPVSMAIFRGRYRESFSTPAPLAANQPLAFQFGLPTANHTFQPGHRVMVQVQSSLFPLYDRNPQTYVPNVFFAKPGDYQKATQRVYVAPGQGSYISLPVR</enzymeml:sequence>
@@ -72,7 +66,7 @@
           </enzymeml:protein>
         </annotation>
       </species>
-      <species metaid="METAID_P2" sboTerm="SBO:0000252" id="p2" name="ED" compartment="v0" initialConcentration="0.2" substanceUnits="u2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species metaid="METAID_P2" sboTerm="SBO:0000252" id="p2" name="ED" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>
           <enzymeml:protein xmlns:enzymeml="http://sbml.org/enzymeml/version2">
             <enzymeml:sequence>MRRLAACLLATAVAAATSAALAQTSPMTPDITGKPFVAGDAANDYVKREVMIPMRDGVKLHTVIVLPKGARNAPIVLTRTPYDASGRTERLASPHMKDLLSAGDDVFVEGGYIRVFQDVRGKYGSEGDYVMTRPLRGPLNPSEVDHATDAWDTIDWLVKNVKESNGKVGMIGSSYEGFTVVMALTNPHPALKVAAPESPMIDGWMGDDWFNYGAFRQVNFDYFTGQLSKRGKGAGIPRQGHDDYSNFLQAGSAGDFAKAAGLEQLPWWHKLTEHAAYDSFWQEQALDKVMARTPLKVPTMWLQGLWDQEDMWGAIHSYAAMEPRDKSNKLNYLVMGPWRHSQVNSDASSLGALNFDGDTARQFRRDVLRPFFDQYLVDGAPKAATPPVFIYNTGENHWDRLQAWPRSCDKGCAAKSKPLYLQAGGKLSFQAPTAAQPAFEEYVSDPAKPVPFVPRPVDFGDRSMWTTWLVHDQRFVDGRPDVLTFVTEPLTAPLQIAGAPDVHLQASTSGSDSDWVVKLIDVYPDEMAADPKMGGYELPVSMAIFRGRYRESFSTPAPLAANQPLAFQFGLPTANHTFQPGHRVMVQVQSSLFPLYDRNPQTYVPNVFFAKPGDYQKATQRVYVAPGQGSYISLPVR</enzymeml:sequence>
@@ -82,13 +76,63 @@
           </enzymeml:protein>
         </annotation>
       </species>
-      <species metaid="METAID_C0" sboTerm="SBO:0000296" id="c0" name="E·PGME" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species metaid="METAID_C1" sboTerm="SBO:0000296" id="c1" name="E·7-ADCA" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species metaid="METAID_C2" sboTerm="SBO:0000296" id="c2" name="E·PG" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species metaid="METAID_C3" sboTerm="SBO:0000296" id="c3" name="E·PGME·PGME" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species metaid="METAID_C4" sboTerm="SBO:0000296" id="c4" name="EA·7-ADCA" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species metaid="METAID_C5" sboTerm="SBO:0000296" id="c5" name="EA·PGME" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species metaid="METAID_C6" sboTerm="SBO:0000296" id="c6" name="E·CEX" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="METAID_C0" sboTerm="SBO:0000296" id="c0" name="E·PGME" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <enzymeml:complex xmlns:enzymeml="http://sbml.org/enzymeml/version2">
+            <enzymeml:participant>p0</enzymeml:participant>
+            <enzymeml:participant>s0</enzymeml:participant>
+          </enzymeml:complex>
+        </annotation>
+      </species>
+      <species metaid="METAID_C1" sboTerm="SBO:0000296" id="c1" name="E·7-ADCA" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <enzymeml:complex xmlns:enzymeml="http://sbml.org/enzymeml/version2">
+            <enzymeml:participant>p0</enzymeml:participant>
+            <enzymeml:participant>s1</enzymeml:participant>
+          </enzymeml:complex>
+        </annotation>
+      </species>
+      <species metaid="METAID_C2" sboTerm="SBO:0000296" id="c2" name="E·PG" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <enzymeml:complex xmlns:enzymeml="http://sbml.org/enzymeml/version2">
+            <enzymeml:participant>p0</enzymeml:participant>
+            <enzymeml:participant>s3</enzymeml:participant>
+          </enzymeml:complex>
+        </annotation>
+      </species>
+      <species metaid="METAID_C3" sboTerm="SBO:0000296" id="c3" name="E·PGME·PGME" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <enzymeml:complex xmlns:enzymeml="http://sbml.org/enzymeml/version2">
+            <enzymeml:participant>p0</enzymeml:participant>
+            <enzymeml:participant>s0</enzymeml:participant>
+            <enzymeml:participant>s0</enzymeml:participant>
+          </enzymeml:complex>
+        </annotation>
+      </species>
+      <species metaid="METAID_C4" sboTerm="SBO:0000296" id="c4" name="EA·7-ADCA" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <enzymeml:complex xmlns:enzymeml="http://sbml.org/enzymeml/version2">
+            <enzymeml:participant>p1</enzymeml:participant>
+            <enzymeml:participant>s1</enzymeml:participant>
+          </enzymeml:complex>
+        </annotation>
+      </species>
+      <species metaid="METAID_C5" sboTerm="SBO:0000296" id="c5" name="EA·PGME" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <enzymeml:complex xmlns:enzymeml="http://sbml.org/enzymeml/version2">
+            <enzymeml:participant>p1</enzymeml:participant>
+            <enzymeml:participant>s0</enzymeml:participant>
+          </enzymeml:complex>
+        </annotation>
+      </species>
+      <species metaid="METAID_C6" sboTerm="SBO:0000296" id="c6" name="E·CEX" compartment="v0" initialConcentration="0" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <enzymeml:complex xmlns:enzymeml="http://sbml.org/enzymeml/version2">
+            <enzymeml:participant>p0</enzymeml:participant>
+            <enzymeml:participant>s2</enzymeml:participant>
+          </enzymeml:complex>
+        </annotation>
+      </species>
       <species metaid="METAID_S0" sboTerm="SBO:0000247" id="s0" name="PGME" compartment="v0" initialConcentration="20" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>
           <enzymeml:reactant xmlns:enzymeml="http://sbml.org/enzymeml/version2">
@@ -123,20 +167,27 @@
       </species>
     </listOfSpecies>
     <listOfParameters>
-      <parameter id="K_si" value="16.12556695" units="u5" constant="false">
+      <parameter id="v_r" value="1000000000" units="u5" constant="true">
         <annotation>
           <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-            <enzymeml:initialValue>16.12556695</enzymeml:initialValue>
-            <enzymeml:upperBound>50.0</enzymeml:upperBound>
+            <enzymeml:initialValue>1000000000.0</enzymeml:initialValue>
+          </enzymeml:parameter>
+        </annotation>
+      </parameter>
+      <parameter id="K_si" value="20" units="u1" constant="false">
+        <annotation>
+          <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
+            <enzymeml:initialValue>20.0</enzymeml:initialValue>
+            <enzymeml:upperBound>1000.0</enzymeml:upperBound>
             <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
           </enzymeml:parameter>
         </annotation>
       </parameter>
-      <parameter id="K_n" value="14.16013538" units="u5" constant="false">
+      <parameter id="K_n" value="300" units="u1" constant="false">
         <annotation>
           <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-            <enzymeml:initialValue>14.16013538</enzymeml:initialValue>
-            <enzymeml:upperBound>1000.0</enzymeml:upperBound>
+            <enzymeml:initialValue>300.0</enzymeml:initialValue>
+            <enzymeml:upperBound>10000.0</enzymeml:upperBound>
             <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
           </enzymeml:parameter>
         </annotation>
@@ -275,11 +326,11 @@
       </annotation>
       <reaction metaid="METAID_R0" sboTerm="SBO:0000176" id="r0" name="reaction-1" reversible="true">
         <listOfReactants>
-          <speciesReference sboTerm="SBO:0000015" species="p0" stoichiometry="1" constant="false"/>
-          <speciesReference sboTerm="SBO:0000015" species="s1" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000015" species="c1" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference sboTerm="SBO:0000011" species="c1" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000011" species="p0" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000011" species="s1" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw name="MassAction Keq">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -291,31 +342,25 @@
                 <apply>
                   <times/>
                   <ci> K_n </ci>
+                  <ci> c1 </ci>
+                </apply>
+                <apply>
+                  <times/>
                   <ci> p0 </ci>
                   <ci> s1 </ci>
                 </apply>
-                <ci> c1 </ci>
               </apply>
             </apply>
           </math>
-          <listOfLocalParameters>
-            <localParameter id="v_r" value="10000" units="u6">
-              <annotation>
-                <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>10000.0</enzymeml:initialValue>
-                </enzymeml:parameter>
-              </annotation>
-            </localParameter>
-          </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction metaid="METAID_R1" sboTerm="SBO:0000176" id="r1" name="reaction-2" reversible="true">
         <listOfReactants>
-          <speciesReference sboTerm="SBO:0000015" species="p0" stoichiometry="1" constant="false"/>
-          <speciesReference sboTerm="SBO:0000015" species="s0" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000015" species="c0" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference sboTerm="SBO:0000011" species="c0" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000011" species="p0" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000011" species="s0" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw name="MassAction Keq">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -327,25 +372,21 @@
                 <apply>
                   <times/>
                   <ci> K_s </ci>
+                  <ci> c0 </ci>
+                </apply>
+                <apply>
+                  <times/>
                   <ci> p0 </ci>
                   <ci> s0 </ci>
                 </apply>
-                <ci> c0 </ci>
               </apply>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="v_r" value="10000" units="u6">
+            <localParameter id="K_s" value="15" units="u1">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>10000.0</enzymeml:initialValue>
-                </enzymeml:parameter>
-              </annotation>
-            </localParameter>
-            <localParameter id="K_s" value="0.9517666749" units="u5">
-              <annotation>
-                <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>0.9517666749</enzymeml:initialValue>
+                  <enzymeml:initialValue>15.0</enzymeml:initialValue>
                   <enzymeml:upperBound>1000.0</enzymeml:upperBound>
                   <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
                 </enzymeml:parameter>
@@ -370,12 +411,12 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k_2" value="32894.518" units="u6">
+            <localParameter id="k_2" value="26000" units="u6">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>32894.518</enzymeml:initialValue>
+                  <enzymeml:initialValue>26000.0</enzymeml:initialValue>
                   <enzymeml:upperBound>1000000.0</enzymeml:upperBound>
-                  <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
+                  <enzymeml:lowerBound>1.0</enzymeml:lowerBound>
                 </enzymeml:parameter>
               </annotation>
             </localParameter>
@@ -384,11 +425,11 @@
       </reaction>
       <reaction metaid="METAID_R3" sboTerm="SBO:0000176" id="r3" name="reaction-4" reversible="true">
         <listOfReactants>
-          <speciesReference sboTerm="SBO:0000015" species="c0" stoichiometry="1" constant="false"/>
-          <speciesReference sboTerm="SBO:0000015" species="s0" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000015" species="c3" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference sboTerm="SBO:0000011" species="c3" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000011" species="c0" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000011" species="s0" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw name="MassAction Keq">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -400,31 +441,25 @@
                 <apply>
                   <times/>
                   <ci> K_si </ci>
+                  <ci> c3 </ci>
+                </apply>
+                <apply>
+                  <times/>
                   <ci> c0 </ci>
                   <ci> s0 </ci>
                 </apply>
-                <ci> c3 </ci>
               </apply>
             </apply>
           </math>
-          <listOfLocalParameters>
-            <localParameter id="v_r" value="10000" units="u6">
-              <annotation>
-                <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>10000.0</enzymeml:initialValue>
-                </enzymeml:parameter>
-              </annotation>
-            </localParameter>
-          </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction metaid="METAID_R4" sboTerm="SBO:0000176" id="r4" name="reaction-5" reversible="true">
         <listOfReactants>
-          <speciesReference sboTerm="SBO:0000015" species="p1" stoichiometry="1" constant="false"/>
-          <speciesReference sboTerm="SBO:0000015" species="s0" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000015" species="c5" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference sboTerm="SBO:0000011" species="c5" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000011" species="p1" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000011" species="s0" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw name="MassAction Keq">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -436,22 +471,16 @@
                 <apply>
                   <times/>
                   <ci> K_si </ci>
+                  <ci> c5 </ci>
+                </apply>
+                <apply>
+                  <times/>
                   <ci> p1 </ci>
                   <ci> s0 </ci>
                 </apply>
-                <ci> c5 </ci>
               </apply>
             </apply>
           </math>
-          <listOfLocalParameters>
-            <localParameter id="v_r" value="10000" units="u6">
-              <annotation>
-                <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>10000.0</enzymeml:initialValue>
-                </enzymeml:parameter>
-              </annotation>
-            </localParameter>
-          </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction metaid="METAID_R5" sboTerm="SBO:0000176" id="r5" name="reaction-6" reversible="false">
@@ -471,12 +500,12 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k_6" value="1364.827977" units="u6">
+            <localParameter id="k_6" value="100000" units="u6">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>1364.827977</enzymeml:initialValue>
-                  <enzymeml:upperBound>1000000.0</enzymeml:upperBound>
-                  <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
+                  <enzymeml:initialValue>100000.0</enzymeml:initialValue>
+                  <enzymeml:upperBound>10000000.0</enzymeml:upperBound>
+                  <enzymeml:lowerBound>1.0</enzymeml:lowerBound>
                 </enzymeml:parameter>
               </annotation>
             </localParameter>
@@ -500,12 +529,12 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k_3" value="999911.3271" units="u6">
+            <localParameter id="k_3" value="25000" units="u6">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>999911.3271</enzymeml:initialValue>
+                  <enzymeml:initialValue>25000.0</enzymeml:initialValue>
                   <enzymeml:upperBound>1000000.0</enzymeml:upperBound>
-                  <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
+                  <enzymeml:lowerBound>1.0</enzymeml:lowerBound>
                 </enzymeml:parameter>
               </annotation>
             </localParameter>
@@ -514,11 +543,11 @@
       </reaction>
       <reaction metaid="METAID_R7" sboTerm="SBO:0000176" id="r7" name="reaction-8" reversible="true">
         <listOfReactants>
-          <speciesReference sboTerm="SBO:0000015" species="p0" stoichiometry="1" constant="false"/>
-          <speciesReference sboTerm="SBO:0000015" species="s3" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000015" species="c2" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference sboTerm="SBO:0000011" species="c2" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000011" species="p0" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000011" species="s3" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw name="MassAction Keq">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -530,25 +559,21 @@
                 <apply>
                   <times/>
                   <ci> K_pg </ci>
+                  <ci> c2 </ci>
+                </apply>
+                <apply>
+                  <times/>
                   <ci> p0 </ci>
                   <ci> s3 </ci>
                 </apply>
-                <ci> c2 </ci>
               </apply>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="v_r" value="10000" units="u6">
+            <localParameter id="K_pg" value="12" units="u1">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>10000.0</enzymeml:initialValue>
-                </enzymeml:parameter>
-              </annotation>
-            </localParameter>
-            <localParameter id="K_pg" value="163.4985656" units="u5">
-              <annotation>
-                <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>163.4985656</enzymeml:initialValue>
+                  <enzymeml:initialValue>12.0</enzymeml:initialValue>
                   <enzymeml:upperBound>1000.0</enzymeml:upperBound>
                   <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
                 </enzymeml:parameter>
@@ -559,11 +584,11 @@
       </reaction>
       <reaction metaid="METAID_R8" sboTerm="SBO:0000176" id="r8" name="reaction-9" reversible="true">
         <listOfReactants>
-          <speciesReference sboTerm="SBO:0000015" species="p1" stoichiometry="1" constant="false"/>
-          <speciesReference sboTerm="SBO:0000015" species="s1" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000015" species="c4" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference sboTerm="SBO:0000011" species="c4" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000011" species="p1" stoichiometry="1" constant="false"/>
+          <speciesReference sboTerm="SBO:0000011" species="s1" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw name="MassAction Keq">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -575,22 +600,16 @@
                 <apply>
                   <times/>
                   <ci> K_n </ci>
+                  <ci> c4 </ci>
+                </apply>
+                <apply>
+                  <times/>
                   <ci> p1 </ci>
                   <ci> s1 </ci>
                 </apply>
-                <ci> c4 </ci>
               </apply>
             </apply>
           </math>
-          <listOfLocalParameters>
-            <localParameter id="v_r" value="10000" units="u6">
-              <annotation>
-                <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>10000.0</enzymeml:initialValue>
-                </enzymeml:parameter>
-              </annotation>
-            </localParameter>
-          </listOfLocalParameters>
         </kineticLaw>
       </reaction>
       <reaction metaid="METAID_R9" sboTerm="SBO:0000176" id="r9" name="reaction-10" reversible="false">
@@ -611,12 +630,12 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k_5" value="438.2508805" units="u6">
+            <localParameter id="k_5" value="30000" units="u6">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>438.2508805</enzymeml:initialValue>
+                  <enzymeml:initialValue>30000.0</enzymeml:initialValue>
                   <enzymeml:upperBound>1000000.0</enzymeml:upperBound>
-                  <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
+                  <enzymeml:lowerBound>1.0</enzymeml:lowerBound>
                 </enzymeml:parameter>
               </annotation>
             </localParameter>
@@ -647,21 +666,21 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k_4" value="13120.92495" units="u6">
+            <localParameter id="k_4" value="4400000" units="u6">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>13120.92495</enzymeml:initialValue>
-                  <enzymeml:upperBound>1000000.0</enzymeml:upperBound>
-                  <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
+                  <enzymeml:initialValue>4400000.0</enzymeml:initialValue>
+                  <enzymeml:upperBound>100000000.0</enzymeml:upperBound>
+                  <enzymeml:lowerBound>1.0</enzymeml:lowerBound>
                 </enzymeml:parameter>
               </annotation>
             </localParameter>
-            <localParameter id="k_4b" value="572987.5006" units="u6">
+            <localParameter id="k_4b" value="550000" units="u6">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>572987.5006</enzymeml:initialValue>
-                  <enzymeml:upperBound>1000000.0</enzymeml:upperBound>
-                  <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
+                  <enzymeml:initialValue>550000.0</enzymeml:initialValue>
+                  <enzymeml:upperBound>100000000.0</enzymeml:upperBound>
+                  <enzymeml:lowerBound>1.0</enzymeml:lowerBound>
                 </enzymeml:parameter>
               </annotation>
             </localParameter>
@@ -697,20 +716,11 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="v_r" value="10000" units="u7">
+            <localParameter id="K_p" value="40" units="u1">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>10000.0</enzymeml:initialValue>
-                  <enzymeml:upperBound>10000.0</enzymeml:upperBound>
-                  <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
-                </enzymeml:parameter>
-              </annotation>
-            </localParameter>
-            <localParameter id="K_p" value="102.3138715" units="u1">
-              <annotation>
-                <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>102.3138715</enzymeml:initialValue>
-                  <enzymeml:upperBound>10000.0</enzymeml:upperBound>
+                  <enzymeml:initialValue>40.0</enzymeml:initialValue>
+                  <enzymeml:upperBound>1000.0</enzymeml:upperBound>
                   <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
                 </enzymeml:parameter>
               </annotation>
@@ -734,12 +744,12 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k_d" value="0.3011902176" units="u6">
+            <localParameter id="k_d" value="0.04" units="u6">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>0.3011902176</enzymeml:initialValue>
-                  <enzymeml:upperBound>0.5</enzymeml:upperBound>
-                  <enzymeml:lowerBound>0.3</enzymeml:lowerBound>
+                  <enzymeml:initialValue>0.04</enzymeml:initialValue>
+                  <enzymeml:upperBound>0.001</enzymeml:upperBound>
+                  <enzymeml:lowerBound>1.0</enzymeml:lowerBound>
                 </enzymeml:parameter>
               </annotation>
             </localParameter>
