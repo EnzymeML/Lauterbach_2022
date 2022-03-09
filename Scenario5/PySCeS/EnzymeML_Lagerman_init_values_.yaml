@@ -71,6 +71,6 @@ r12:
   k_d:
     initial_value: 0.04
     constant: false
-    upper: 0.001
-    lower: 1.0
+    upper: 1.0
+    lower: 0.001
 
