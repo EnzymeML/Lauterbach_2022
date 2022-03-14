@@ -46,7 +46,7 @@
       <compartment id="v0" name="Falcon Tube" spatialDimensions="3" size="5" units="u0" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
-      <species metaid="METAID_P0" sboTerm="SBO:0000252" id="p0" name="E" compartment="v0" initialConcentration="0.0002" substanceUnits="u2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species metaid="METAID_P0" sboTerm="SBO:0000252" id="p0" name="E" compartment="v0" initialConcentration="0.0002" substanceUnits="u1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>
           <enzymeml:protein xmlns:enzymeml="http://sbml.org/enzymeml/version2">
             <enzymeml:sequence>MRRLAACLLATAVAAATSAALAQTSPMTPDITGKPFVAGDAANDYVKREVMIPMRDGVKLHTVIVLPKGARNAPIVLTRTPYDASGRTERLASPHMKDLLSAGDDVFVEGGYIRVFQDVRGKYGSEGDYVMTRPLRGPLNPSEVDHATDAWDTIDWLVKNVKESNGKVGMIGSSYEGFTVVMALTNPHPALKVAAPESPMIDGWMGDDWFNYGAFRQVNFDYFTGQLSKRGKGAGIPRQGHDDYSNFLQAGSAGDFAKAAGLEQLPWWHKLTEHAAYDSFWQEQALDKVMARTPLKVPTMWLQGLWDQEDMWGAIHSYAAMEPRDKSNKLNYLVMGPWRHSQVNSDASSLGALNFDGDTARQFRRDVLRPFFDQYLVDGAPKAATPPVFIYNTGENHWDRLQAWPRSCDKGCAAKSKPLYLQAGGKLSFQAPTAAQPAFEEYVSDPAKPVPFVPRPVDFGDRSMWTTWLVHDQRFVDGRPDVLTFVTEPLTAPLQIAGAPDVHLQASTSGSDSDWVVKLIDVYPDEMAADPKMGGYELPVSMAIFRGRYRESFSTPAPLAANQPLAFQFGLPTANHTFQPGHRVMVQVQSSLFPLYDRNPQTYVPNVFFAKPGDYQKATQRVYVAPGQGSYISLPVR</enzymeml:sequence>
@@ -174,19 +174,19 @@
           </enzymeml:parameter>
         </annotation>
       </parameter>
-      <parameter id="K_si" value="20" units="u1" constant="false">
+      <parameter id="K_si" value="6.346729249" units="u1" constant="false">
         <annotation>
           <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-            <enzymeml:initialValue>20.0</enzymeml:initialValue>
+            <enzymeml:initialValue>6.346729249</enzymeml:initialValue>
             <enzymeml:upperBound>1000.0</enzymeml:upperBound>
             <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
           </enzymeml:parameter>
         </annotation>
       </parameter>
-      <parameter id="K_n" value="300" units="u1" constant="false">
+      <parameter id="K_n" value="11.00542741" units="u1" constant="false">
         <annotation>
           <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-            <enzymeml:initialValue>300.0</enzymeml:initialValue>
+            <enzymeml:initialValue>11.00542741</enzymeml:initialValue>
             <enzymeml:upperBound>10000.0</enzymeml:upperBound>
             <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
           </enzymeml:parameter>
@@ -256,56 +256,56 @@
           </enzymeml:formats>
           <enzymeml:listOfMeasurements>
             <enzymeml:measurement file="file0" id="m0" name="Cephalexin synthesis 1">
-              <enzymeml:initConc protein="p0" value="0.2" unit="u2"/>
+              <enzymeml:initConc protein="p0" value="0.0002" unit="u1"/>
               <enzymeml:initConc reactant="s0" value="20.0" unit="u1"/>
               <enzymeml:initConc reactant="s1" value="10.0" unit="u1"/>
               <enzymeml:initConc reactant="s2" value="0.0" unit="u1"/>
               <enzymeml:initConc reactant="s3" value="2.0" unit="u1"/>
             </enzymeml:measurement>
             <enzymeml:measurement file="file1" id="m1" name="Cephalexin synthesis 2">
-              <enzymeml:initConc protein="p0" value="0.2" unit="u2"/>
+              <enzymeml:initConc protein="p0" value="0.0002" unit="u1"/>
               <enzymeml:initConc reactant="s0" value="20.0" unit="u1"/>
               <enzymeml:initConc reactant="s1" value="20.0" unit="u1"/>
               <enzymeml:initConc reactant="s2" value="0.0" unit="u1"/>
               <enzymeml:initConc reactant="s3" value="1.3" unit="u1"/>
             </enzymeml:measurement>
             <enzymeml:measurement file="file2" id="m2" name="Cephalexin synthesis 3">
-              <enzymeml:initConc protein="p0" value="0.2" unit="u2"/>
+              <enzymeml:initConc protein="p0" value="0.0002" unit="u1"/>
               <enzymeml:initConc reactant="s0" value="20.0" unit="u1"/>
               <enzymeml:initConc reactant="s1" value="40.0" unit="u1"/>
               <enzymeml:initConc reactant="s2" value="0.0" unit="u1"/>
               <enzymeml:initConc reactant="s3" value="5.1" unit="u1"/>
             </enzymeml:measurement>
             <enzymeml:measurement file="file3" id="m3" name="Cephalexin synthesis 4">
-              <enzymeml:initConc protein="p0" value="0.2" unit="u2"/>
+              <enzymeml:initConc protein="p0" value="0.0002" unit="u1"/>
               <enzymeml:initConc reactant="s0" value="20.0" unit="u1"/>
               <enzymeml:initConc reactant="s1" value="60.0" unit="u1"/>
               <enzymeml:initConc reactant="s2" value="0.0" unit="u1"/>
               <enzymeml:initConc reactant="s3" value="1.9" unit="u1"/>
             </enzymeml:measurement>
             <enzymeml:measurement file="file4" id="m4" name="Cephalexin synthesis 5">
-              <enzymeml:initConc protein="p0" value="0.2" unit="u2"/>
+              <enzymeml:initConc protein="p0" value="0.0002" unit="u1"/>
               <enzymeml:initConc reactant="s0" value="20.0" unit="u1"/>
               <enzymeml:initConc reactant="s1" value="42.0" unit="u1"/>
               <enzymeml:initConc reactant="s2" value="0.0" unit="u1"/>
               <enzymeml:initConc reactant="s3" value="1.5" unit="u1"/>
             </enzymeml:measurement>
             <enzymeml:measurement file="file5" id="m5" name="Cephalexin synthesis 6">
-              <enzymeml:initConc protein="p0" value="0.2" unit="u2"/>
+              <enzymeml:initConc protein="p0" value="0.0002" unit="u1"/>
               <enzymeml:initConc reactant="s0" value="40.0" unit="u1"/>
               <enzymeml:initConc reactant="s1" value="42.0" unit="u1"/>
               <enzymeml:initConc reactant="s2" value="0.0" unit="u1"/>
               <enzymeml:initConc reactant="s3" value="3.3" unit="u1"/>
             </enzymeml:measurement>
             <enzymeml:measurement file="file6" id="m6" name="Cephalexin synthesis 7">
-              <enzymeml:initConc protein="p0" value="0.2" unit="u2"/>
+              <enzymeml:initConc protein="p0" value="0.0002" unit="u1"/>
               <enzymeml:initConc reactant="s0" value="76.0" unit="u1"/>
-              <enzymeml:initConc reactant="s1" value="50.0" unit="u1"/>
+              <enzymeml:initConc reactant="s1" value="40.0" unit="u1"/>
               <enzymeml:initConc reactant="s2" value="0.0" unit="u1"/>
               <enzymeml:initConc reactant="s3" value="5.7" unit="u1"/>
             </enzymeml:measurement>
             <enzymeml:measurement file="file7" id="m7" name="Cephalexin synthesis 8">
-              <enzymeml:initConc protein="p0" value="0.2" unit="u2"/>
+              <enzymeml:initConc protein="p0" value="0.0002" unit="u1"/>
               <enzymeml:initConc reactant="s0" value="140.0" unit="u1"/>
               <enzymeml:initConc reactant="s1" value="40.0" unit="u1"/>
               <enzymeml:initConc reactant="s2" value="0.0" unit="u1"/>
@@ -383,10 +383,10 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="K_s" value="15" units="u1">
+            <localParameter id="K_s" value="5.676255758" units="u1">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>15.0</enzymeml:initialValue>
+                  <enzymeml:initialValue>5.676255758</enzymeml:initialValue>
                   <enzymeml:upperBound>1000.0</enzymeml:upperBound>
                   <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
                 </enzymeml:parameter>
@@ -411,10 +411,10 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k_2" value="26000" units="u6">
+            <localParameter id="k_2" value="652085.5139" units="u6">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>26000.0</enzymeml:initialValue>
+                  <enzymeml:initialValue>652085.5139</enzymeml:initialValue>
                   <enzymeml:upperBound>1000000.0</enzymeml:upperBound>
                   <enzymeml:lowerBound>1.0</enzymeml:lowerBound>
                 </enzymeml:parameter>
@@ -500,10 +500,10 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k_6" value="100000" units="u6">
+            <localParameter id="k_6" value="393169.3931" units="u6">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>100000.0</enzymeml:initialValue>
+                  <enzymeml:initialValue>393169.3931</enzymeml:initialValue>
                   <enzymeml:upperBound>10000000.0</enzymeml:upperBound>
                   <enzymeml:lowerBound>1.0</enzymeml:lowerBound>
                 </enzymeml:parameter>
@@ -529,10 +529,10 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k_3" value="25000" units="u6">
+            <localParameter id="k_3" value="8.93817854" units="u6">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>25000.0</enzymeml:initialValue>
+                  <enzymeml:initialValue>8.93817854</enzymeml:initialValue>
                   <enzymeml:upperBound>1000000.0</enzymeml:upperBound>
                   <enzymeml:lowerBound>1.0</enzymeml:lowerBound>
                 </enzymeml:parameter>
@@ -570,10 +570,10 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="K_pg" value="12" units="u1">
+            <localParameter id="K_pg" value="47.34446037" units="u1">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>12.0</enzymeml:initialValue>
+                  <enzymeml:initialValue>47.34446037</enzymeml:initialValue>
                   <enzymeml:upperBound>1000.0</enzymeml:upperBound>
                   <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
                 </enzymeml:parameter>
@@ -630,10 +630,10 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k_5" value="30000" units="u6">
+            <localParameter id="k_5" value="672295.823" units="u6">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>30000.0</enzymeml:initialValue>
+                  <enzymeml:initialValue>672295.823</enzymeml:initialValue>
                   <enzymeml:upperBound>1000000.0</enzymeml:upperBound>
                   <enzymeml:lowerBound>1.0</enzymeml:lowerBound>
                 </enzymeml:parameter>
@@ -666,19 +666,19 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k_4" value="4400000" units="u6">
+            <localParameter id="k_4" value="1870570.524" units="u6">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>4400000.0</enzymeml:initialValue>
+                  <enzymeml:initialValue>1870570.524</enzymeml:initialValue>
                   <enzymeml:upperBound>100000000.0</enzymeml:upperBound>
                   <enzymeml:lowerBound>1.0</enzymeml:lowerBound>
                 </enzymeml:parameter>
               </annotation>
             </localParameter>
-            <localParameter id="k_4b" value="550000" units="u6">
+            <localParameter id="k_4b" value="42451.1374" units="u6">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>550000.0</enzymeml:initialValue>
+                  <enzymeml:initialValue>42451.1374</enzymeml:initialValue>
                   <enzymeml:upperBound>100000000.0</enzymeml:upperBound>
                   <enzymeml:lowerBound>1.0</enzymeml:lowerBound>
                 </enzymeml:parameter>
@@ -716,10 +716,10 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="K_p" value="40" units="u1">
+            <localParameter id="K_p" value="0.9433184993" units="u1">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>40.0</enzymeml:initialValue>
+                  <enzymeml:initialValue>0.9433184993</enzymeml:initialValue>
                   <enzymeml:upperBound>1000.0</enzymeml:upperBound>
                   <enzymeml:lowerBound>0.01</enzymeml:lowerBound>
                 </enzymeml:parameter>
@@ -744,12 +744,12 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k_d" value="0.04" units="u6">
+            <localParameter id="k_d" value="0.5149464784" units="u6">
               <annotation>
                 <enzymeml:parameter xmlns:enzymeml="http://sbml.org/enzymeml/version2">
-                  <enzymeml:initialValue>0.04</enzymeml:initialValue>
-                  <enzymeml:upperBound>0.001</enzymeml:upperBound>
-                  <enzymeml:lowerBound>1.0</enzymeml:lowerBound>
+                  <enzymeml:initialValue>0.5149464784</enzymeml:initialValue>
+                  <enzymeml:upperBound>1.0</enzymeml:upperBound>
+                  <enzymeml:lowerBound>0.001</enzymeml:lowerBound>
                 </enzymeml:parameter>
               </annotation>
             </localParameter>
