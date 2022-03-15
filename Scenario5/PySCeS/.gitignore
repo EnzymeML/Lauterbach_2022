@@ -1,0 +1,8 @@
+# Jupyter Notebook
+.ipynb_checkpoints
+
+pySCeS
+COPASI
+EnzymeML_Lagerman_M4_COPASI_Modeled.omex
+EnzymeML_Lagerman_M4_PySCeS_Modeled.omex
+EnzymeML_Lagerman.xml-sbml_conversion_errors.txt
