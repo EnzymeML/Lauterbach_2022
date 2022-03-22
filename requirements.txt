@@ -1,4 +1,4 @@
-git+https://github.com/EnzymeML/PyEnzyme.git@Refactoring
+git+https://github.com/EnzymeML/PyEnzyme.git
 matplotlib
 pandas
 lmfit
